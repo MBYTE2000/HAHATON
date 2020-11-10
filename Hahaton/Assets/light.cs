@@ -17,10 +17,6 @@ public class light : MonoBehaviour
             var mirror = hit.collider.GetComponent<mirror>();
             mirror.DrawRay(hit.point, dir, factor);
         }
-        else
-        {
-            mirror.delRays();
-        }
     }
 
     private void OnDrawGizmos()
